@@ -21,14 +21,97 @@ export default function HomeScreen({ navigation, route }) {
   const [editText, setEditText] = useState('');
 
   const [tasks, setTasks] = useState({
-    Monday: [],
-    Tuesday: [],
-    Wednesday: [],
-    Thursday: [],
-    Friday: [],
-    Saturday: [],
-    Sunday: []
-  });
+  Monday: [
+    {
+      id: '1',
+      text: 'Study Physics',
+      completed: false
+    },
+    {
+      id: '2',
+      text: 'Practice Coding',
+      completed: true
+    }
+  ],
+
+  Tuesday: [
+    {
+      id: '3',
+      text: 'Complete Math Assignment',
+      completed: false
+    },
+    {
+      id: '4',
+      text: 'Read Operating Systems Notes',
+      completed: true
+    }
+  ],
+
+  Wednesday: [
+    {
+      id: '5',
+      text: 'Revise Data Structures',
+      completed: false
+    },
+    {
+      id: '6',
+      text: 'Practice Python Programs',
+      completed: true
+    }
+  ],
+
+  Thursday: [
+    {
+      id: '7',
+      text: 'Study DBMS',
+      completed: false
+    },
+    {
+      id: '8',
+      text: 'Prepare Seminar Topics',
+      completed: true
+    }
+  ],
+
+  Friday: [
+    {
+      id: '9',
+      text: 'Solve Aptitude Questions',
+      completed: false
+    },
+    {
+      id: '10',
+      text: 'Practice React Native',
+      completed: true
+    }
+  ],
+
+  Saturday: [
+    {
+      id: '11',
+      text: 'Mini Project Development',
+      completed: false
+    },
+    {
+      id: '12',
+      text: 'Read Computer Networks',
+      completed: true
+    }
+  ],
+
+  Sunday: [
+    {
+      id: '13',
+      text: 'Weekly Revision',
+      completed: false
+    },
+    {
+      id: '14',
+      text: 'Plan Next Week Schedule',
+      completed: true
+    }
+  ]
+});
 
   // ADD TASK
   const addTask = () => {
@@ -110,11 +193,7 @@ export default function HomeScreen({ navigation, route }) {
     <ScrollView style={styles.container}>
 
       {/* HEADER */}
-      <Text style={styles.title}>📚 {selectedDay}</Text>
-
-<Text style={styles.welcome}>
-  Stay focused and complete your study goals 🚀
-</Text>
+      <Text style={styles.title}>{selectedDay}</Text>
       <Text style={styles.subtitle}>
         {tasks[selectedDay].length} Tasks
       </Text>
@@ -228,13 +307,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginBottom: 15
   },
-
-  welcome: {
-  color: '#bbb',
-  textAlign: 'center',
-  marginBottom: 15,
-  fontSize: 14
-},
 
   input: {
     flex: 1,
