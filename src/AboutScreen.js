@@ -21,11 +21,11 @@ export default function AboutScreen() {
         <Text style={styles.heading}>👩‍💻Developed By</Text>
         
         <Text style={styles.text}>
-           • Manasa S{"\n"}
-           • Keerthana R{"\n"}
            • Anvitha K{"\n"}
-           • Keerthana S{"\n"}
-           • Bhumika R
+           • Bhumika R{"\n"}
+           • Keerthana R {"\n"}
+           • Keerthana S {"\n"}
+           • Manasa S
         </Text>
       </View>
 
