@@ -23,7 +23,7 @@ export default function AboutScreen() {
         <Text style={styles.text}>
            • Anvitha K{"\n"}
            • Bhumika R{"\n"}
-           • Keerthana R{"\n"}
+           • Keerthana R {"\n"}
            • Keerthana S {"\n"}
            • Manasa S
         </Text>
