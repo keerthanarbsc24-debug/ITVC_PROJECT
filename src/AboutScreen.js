@@ -13,12 +13,12 @@ export default function AboutScreen() {
       <View style={styles.section}>
         <Text style={styles.heading}>About</Text>
         <Text style={styles.text}>
-          The Smart Study Planner is a mobile app that helps students manage tasks, track completion, and monitor their study progress.
+          Objective: To help students organize study tasks and improve productivity.
         </Text>
       </View>
 
       <View style={styles.section}>
-        <Text style={styles.heading}>Developed By</Text>
+        <Text style={styles.heading}>👩‍💻Developed By</Text>
         
         <Text style={styles.text}>
            • Manasa S{"\n"}
@@ -28,6 +28,8 @@ export default function AboutScreen() {
            • Bhumika R
         </Text>
       </View>
+
+      <Text style={styles.footer}>Made with React Native 🚀 </Text>
 
     </View>
   );
@@ -75,9 +77,21 @@ const styles = StyleSheet.create({
     marginBottom: 8
   },
 
+  objective: {
+    marginTop: 10,
+    color: '#6200EE',
+    fontWeight: '600'
+  },
+
   text: {
     fontSize: 14,
     color: '#555'
-  }
+  },
 
+  footer: {
+    textAlign: 'center',
+    marginTop: 20,
+    color: 'gray',
+    fontStyle: 'italic'
+  },
 });
