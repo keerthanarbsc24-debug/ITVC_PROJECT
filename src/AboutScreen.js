@@ -32,7 +32,7 @@ export default function AboutScreen() {
     </View>
   );
 }
-
+#The UI Component
 const styles = StyleSheet.create({
 
   container: {
