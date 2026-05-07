@@ -110,7 +110,11 @@ export default function HomeScreen({ navigation, route }) {
     <ScrollView style={styles.container}>
 
       {/* HEADER */}
-      <Text style={styles.title}>{selectedDay}</Text>
+      <Text style={styles.title}>📚 {selectedDay}</Text>
+
+<Text style={styles.welcome}>
+  Stay focused and complete your study goals 🚀
+</Text>
       <Text style={styles.subtitle}>
         {tasks[selectedDay].length} Tasks
       </Text>
@@ -224,6 +228,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginBottom: 15
   },
+
+  welcome: {
+  color: '#bbb',
+  textAlign: 'center',
+  marginBottom: 15,
+  fontSize: 14
+},
 
   input: {
     flex: 1,

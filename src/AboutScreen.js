@@ -33,7 +33,7 @@ export default function AboutScreen() {
   );
 }
 
-"""The UI Component"""
+
 
 const styles = StyleSheet.create({
 
